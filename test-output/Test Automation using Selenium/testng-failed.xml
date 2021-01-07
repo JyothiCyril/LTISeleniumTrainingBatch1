@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Test Automation using Selenium]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Amazon Functional Testing(failed)">
+    <parameter name="Category" value="Books"/>
+    <parameter name="ItemName" value="Da Vinci Code"/>
+    <classes>
+      <class name="com.qa.testscripts.Amazon_SearchMultipleItems">
+        <methods>
+          <include name="LaunchURL"/>
+          <include name="CheckTitle"/>
+          <include name="tearDown"/>
+          <include name="TestClosure"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.testscripts.Amazon_SearchMultipleItems -->
+    </classes>
+  </test> <!-- Amazon Functional Testing(failed) -->
+</suite> <!-- Failed suite [Test Automation using Selenium] -->
